@@ -1,0 +1,50 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Container styling */
+.container {
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stacks logos vertically */
+    justify-content: space-between; /* Even spacing between logos */
+    align-items: center; /* Centers logos horizontally */
+    height: 80%; /* Takes 80% of the viewport height for spacing */
+    width: 100%; /* Makes the container stretch across the screen */
+    max-width: 600px; /* Optional: limits the width on larger screens */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Logo styling */
+.logo {
+    width: 80px; /* Default size for logos */
+    height: auto; /* Maintains aspect ratio */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+/* Responsive adjustments for large screens */
+@media (min-width: 1024px) {
+    .logo {
+        width: 100px; /* Larger logo size for bigger screens */
+    }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 600px) {
+    .logo {
+        width: 60px; /* Smaller logo size for mobile */
+    }
+}

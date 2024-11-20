@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Social Media Links</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                margin: 20px auto;
+            }
+            .logo {
+                display: block;
+                margin: 20px auto;
+                width: 80px;
+                height: auto;
+                transition: transform 0.3s;
+            }
+            .logo:hover {
+                transform: scale(1.1);
+            }
+            a {
+                text-decoration: none;
+            }
+    
+            /* Media query for smaller screens (mobile phones) */
+            @media (max-width: 600px) {
+                .logo {
+                    width: 60px; /* Reduce logo size on smaller screens */
+                }
+            }
+    
+            /* Media query for larger screens (laptops/desktops) */
+            @media (min-width: 1024px) {
+                .logo {
+                    width: 100px; /* Increase logo size on larger screens */
+                }
+            }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <a href="https://www.instagram.com/your_page/" target="_blank">
+            <img src="images/Instagram_icon.png.webp" alt="Instagram" class="logo">
+        </a>
+        <a href="https://www.facebook.com/your_page/" target="_blank">
+            <img src="images/facebook_icon.png" alt="Facebook" class="logo">
+        </a>
+        <a href="https://www.tiktok.com/@your_page/" target="_blank">
+            <img src="images/tiktok_icon.webp" alt="TikTok" class="logo">
+        </a>
+        <a href="https://wa.me/+96171117961" target="_blank">
+            <img src="images/whatsapp_icon.png" alt="WhatsApp" class="logo">
+        </a>
+    </div>
+</body>
+</html>
