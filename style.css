@@ -1,39 +1,70 @@
-/* General body styling */
+/* General body styling with responsive background */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light gray background */
+    background-image: url('images/logo2.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full height of the viewport */
+    min-height: 100vh; /* Ensures it covers the viewport height */
+    color: #fff; /* Optional: Makes text readable on darker backgrounds */
 }
 
-/* Container styling */
+/* Container styling (box effect) */
 .container {
-    display: flex; /* Enables Flexbox */
-    flex-direction: column; /* Stacks logos vertically */
-    justify-content: space-between; /* Even spacing between logos */
-    align-items: center; /* Centers logos horizontally */
-    height: 80%; /* Takes 80% of the viewport height for spacing */
-    width: 100%; /* Makes the container stretch across the screen */
-    max-width: 600px; /* Optional: limits the width on larger screens */
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
     box-sizing: border-box;
+    
+    /* Background color for the container (box effect) */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px; /* Rounds the edges of the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
 }
 
 /* Logo styling */
+a {
+    text-decoration: none; /* Removes the default underline from links */
+}
+
 .logo {
     width: 80px; /* Default size for logos */
     height: auto; /* Maintains aspect ratio */
     transition: transform 0.3s; /* Smooth hover effect */
+    margin: 10px 0; /* Adds space between logos */
 }
 
 .logo:hover {
     transform: scale(1.1); /* Slight zoom on hover */
 }
 
+/* Email section styling */
+.email-section {
+    margin: 20px 0; /* Adds space around the email section */
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.email-section a {
+    text-decoration: none; /* Removes underline from email link */
+    color: #0078d4; /* Link color (blue) */
+    font-weight: bold;
+}
+
+.email-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
 
 /* Responsive adjustments for large screens */
 @media (min-width: 1024px) {
@@ -44,7 +75,16 @@ body {
 
 /* Responsive adjustments for small screens */
 @media (max-width: 600px) {
+    body {
+        background-size: auto 100%; /* Adjusts the background to fit vertically on smaller screens */
+        background-attachment: scroll; /* Avoids fixed backgrounds on mobile */
+    }
+
+    .container {
+        width: 90%; /* Makes the content more compact on small screens */
+    }
+
     .logo {
-        width: 60px; /* Smaller logo size for mobile */
+        width: 85px; /* Smaller logo size for mobile */
     }
 }
