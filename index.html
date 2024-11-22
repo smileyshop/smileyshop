@@ -1,68 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SmileyShop</title>
-        <link rel="stylesheet" href="style.css">
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                text-align: center;
-                background-color: #f4f4f4;
-                margin: 0;
-                padding: 0;
-            }
-            .container {
-                margin: 20px auto;
-            }
-            .logo {
-                display: block;
-                margin: 20px auto;
-                width: 80px;
-                height: auto;
-                transition: transform 0.3s;
-            }
-            .logo:hover {
-                transform: scale(1.1);
-            }
-            a {
-                text-decoration: none;
-            }
-    
-            /* Media query for smaller screens (mobile phones) */
-            @media (max-width: 600px) {
-                .logo {
-                    width: 60px; /* Reduce logo size on smaller screens */
-                }
-            }
-    
-            /* Media query for larger screens (laptops/desktops) */
-            @media (min-width: 1024px) {
-                .logo {
-                    width: 100px; /* Increase logo size on larger screens */
-                }
-            }
-        </style>
-    </head>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Logo on top -->
+    <link rel="shortcut icon" href="logo-smileyshop-transparent.png" type="image/x-icon" />
+    <!-- BootStrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- Page Title -->
+    <title>Smiley Shop</title>
+</head>
+
 <body>
-    <div class="container">
-        <a href="https://www.instagram.com/georgefrangieh_?igsh=MXNuM2gxcGFta2dpcA==" target="_blank">
-            <img src="images/Instagram_icon.png.webp" alt="Instagram" class="logo">
-        </a>
-        <a href="https://www.facebook.com/your_page/" target="_blank">
-            <img src="images/facebook_icon.png" alt="Facebook" class="logo">
-        </a>
-        <a href="https://www.tiktok.com/@your_page/" target="_blank">
-            <img src="images/tiktok_icon.webp" alt="TikTok" class="logo">
-        </a>
-        <a href="https://wa.me/+96171738382" target="_blank">
-            <img src="images/whatsapp_icon.png" alt="WhatsApp" class="logo">
-        </a>
-        <div class="email-section">
-            <p>Contact us via email:</p>
-            <a href="mailto:info@smileyshoplb.com">Info@smileyshoplb.com</a>
+    <!-- Page Content -->
+    <div class="content">
+        <!-- Page Logo -->
+        <div class="logo">
+            <!-- Page Logo Image -->
+            <img src="images/logo2_transparent.jpg" alt="" />
+            <!-- Footer -->
+            <footer>
+                <!-- Footer Top Part -->
+                <div class="section1">
+                    <!-- Icons With links -->
+                    <div class="icons">
+                        <!-- Facebook -->
+                        <div class="facebook">
+                            <a href="#" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </div>
+                        <!-- Instagram -->
+                        <div class="instagram">
+                            <a href="https://www.instagram.com/georgefrangieh_?igsh=MXNuM2gxcGFta2dpcA==" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                        <!-- TikTok -->
+                        <div class="tiktok">
+                            <a href="#" target="_blank">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                        </div>
+                        <!-- What's App -->
+                        <div class="whatsapp">
+                            <a href="https://wa.me/+96171738382" target="_blank">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Top Part Text -->
+                    <div class="text">
+                        <p>
+                            <a href="https://wa.me/+96106415379">06 415 379</a> <b></b> &nbsp; <a href="https://wa.me/+96171738382">71 73 83 82</a>
+                            <b></b> &nbsp; <a href="https://wa.me/+96171738386">71 73 83 86</a>
+                        </p>
+                        <p class="email"><a href="mailto:info@smileyshoplb.com">Info@smileyshoplb.com</a></p>
+                    </div>
+                </div>
+                <!-- Footer Bottom Part -->
+                <div class="section2">
+                    <p>
+                        Daher El Ein, Koura,
+                        <br />
+                        Main Road Next to New Epoque
+                    </p>
+                </div>
+                <br />
+            </footer>
         </div>
     </div>
 </body>
+
 </html>
